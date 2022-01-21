@@ -1,0 +1,45 @@
+RELEASES FIRMWARE ETC
+-------------------------
+https://github.com/IntelRealSense/librealsense/releases/tag/v2.47.0
+
+
+UBUNTU
+----------------
+https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md
+
+sudo apt-key adv --keyserver keys.gnupg.net --recv-key F6E65AC044F831AC80A06380C8B3A55A6F3EFCDE || sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key F6E65AC044F831AC80A06380C8B3A55A6F3EFCDE
+
+sudo add-apt-repository "deb https://librealsense.intel.com/Debian/apt-repo $(lsb_release -cs) main" -u
+
+sudo apt-get install librealsense2-dkms
+sudo apt-get install librealsense2-utils
+
+
+Reconnect the Intel RealSense depth camera and run: realsense-viewer to verify the installation.
+
+Verify that the kernel is updated :
+modinfo uvcvideo | grep "version:" should include realsense string
+
+
+FIRMWARE
+-------------------------------
+https://dev.intelrealsense.com/docs/firmware-updates
+
+
+PYTHON
+----------
+https://github.com/IntelRealSense/librealsense/tree/development/wrappers/python
+
+
+
+https://www.intelrealsense.com/depth-camera-d435/
+
+https://www.intelrealsense.com/developers/
+
+https://github.com/IntelRealSense/librealsense/tree/master/wrappers/python/examples
+
+https://dev.intelrealsense.com/docs/python2?_ga=2.104710472.998522496.1624964313-1449589987.1624964313
+
+https://github.com/IntelRealSense/librealsense/blob/jupyter/notebooks/distance_to_object.ipynb
+
+
